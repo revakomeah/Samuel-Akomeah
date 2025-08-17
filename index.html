@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,101 +9,161 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
       background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #2c3e50;
+      background: linear-gradient(to right, #d4af37, #b8912e);
       color: white;
       padding: 40px 20px;
+      text-align: center;
     }
     header img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 4px solid white;
+      border: 5px solid white;
+      margin-bottom: 15px;
     }
     header h1 {
-      margin: 15px 0 10px;
+      margin: 10px 0 5px;
       font-size: 28px;
     }
     header p {
-      font-size: 16px;
+      margin: 0;
+      font-size: 18px;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d4af37;
     }
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #2c3e50;
+      color: #b8912e;
+      text-align: center;
       margin-bottom: 15px;
     }
-    .button {
-      padding: 12px 24px;
-      background: #0b5ed7;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
       display: inline-block;
+      background: #d4af37;
+      color: #fff;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #b8912e;
     }
     footer {
-      background: #2c3e50;
+      background: #333;
       color: white;
+      text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 30px;
     }
-    .social a {
-      margin: 0 10px;
+    .social-links {
+      margin-top: 15px;
+    }
+    .gold-btn {
+      display: inline-block;
+      background: #d4af37;
+      color: #fff;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 25px;
       text-decoration: none;
-      color: #0b5ed7;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .gold-btn:hover {
+      background: #b8912e;
+      box-shadow: 0 0 12px #d4af37;
+    }
+    .donate-btn-container {
+      text-align: center;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="1000000056.jpg" alt="Rev. Samuel Akomeah">
     <h1>Rev. Samuel Akomeah</h1>
-    <p>Pastor | Teacher | Revivalist</p>
+    <p>Pastor | Teacher | Servant of God</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#donate">Donate</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I am Rev. Samuel Akomeah, a passionate servant of God called to preach the gospel of Jesus Christ,
-      raise disciples, and ignite the fire of revival in the hearts of believers. Through Alpha Word Ministries,
-      I am committed to teaching, intercession, and spreading the message of prayer and transformation.
+      Rev. Samuel Akomeah is the founder of Alpha Word Ministries in Accra, Ghana. 
+      He is a passionate preacher, teacher, and revivalist with a mandate to 
+      rebuild the altar of prayer and bring believers into deeper intimacy with God.
     </p>
   </section>
 
-  <section>
-    <h2>Contact</h2>
+  <section id="contact">
+    <h2>Contact Me</h2>
     <p>Email: <a href="mailto:alphawordministriesgh@gmail.com">alphawordministriesgh@gmail.com</a></p>
-    <p>Phone: 0549910888</p>
+    <p>Phone: +233 549910888 | +233 535432977</p>
     <p>Location: Accra, Ghana</p>
+    <form action="https://formspree.io/f/xblkekpj" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <section>
-    <h2>Connect with Me</h2>
-    <div class="social">
-      <a href="https://www.facebook.com/share/16KnvF8Xj8/">Facebook</a> |
-      <a href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw">Instagram</a>
+  <section id="donate">
+    <h2>Support the Ministry</h2>
+    <p>Your generosity helps spread the Gospel and support the work of God.</p>
+    <div class="donate-btn-container">
+      <a href="https://paystack.shop/pay/nn8ascpvgn" target="_blank" class="gold-btn">Donate</a>
     </div>
   </section>
 
-  <section>
-    <h2>Support the Ministry</h2>
-    <a href="https://paystack.shop/pay/nn8ascpvgn" target="_blank" class="button">Donate via Paystack</a>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Rev. Samuel Akomeah. All rights reserved.</p>
+    © 2025 Rev. Samuel Akomeah | All Rights Reserved | To God be the Glory
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank" class="gold-btn">Facebook</a>
+      <a href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw" target="_blank" class="gold-btn">Instagram</a>
+      <a href="https://wa.me/233535432977?text=Hello%20Rev.%20Samuel%2C%20I%27d%20like%20to%20connect%20with%20you." target="_blank" class="gold-btn">WhatsApp (Connect)</a>
+      <a href="https://wa.me/233535432977?text=Hello%20Rev.%20Samuel%2C%20I%20have%20a%20prayer%20request." target="_blank" class="gold-btn">WhatsApp (Prayer Request)</a>
+    </div>
   </footer>
-
 </body>
 </html>
