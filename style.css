@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a0000 url('assets/fire-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+header {
+  background: rgba(100,0,0,0.8);
+  padding: 1rem;
+  text-align: center;
+  color: gold;
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,0.7);
+}
+nav a {
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  background: rgba(255,69,0,0.6);
+  border-radius: 5px;
+}
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: rgba(0,0,0,0.6);
+}
+button, .btn {
+  background: linear-gradient(45deg, darkred, orange);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  background: rgba(0,0,0,0.9);
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

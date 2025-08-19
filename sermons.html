@@ -1,101 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sermons — Rev. Samuel Akomeah</title>
-  <style>
-  :root{
-    --primary:#8b0000;
-    --primary-dark:#650000;
-    --text:#2b2b2b;
-    --muted:#666;
-    --bg:#fafafa;
-    --card:#ffffff;
-    --gold:#d4af37;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
-  a{color:var(--primary);text-decoration:none}
-  img{max-width:100%;display:block}
-  .nav{position:sticky;top:0;z-index:50;background:#111;color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1)}
-  .nav .wrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-  .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);object-fit:cover;background:#222}
-  .menu{display:flex;gap:16px;flex-wrap:wrap}
-  .menu a{color:#fff;opacity:.95;padding:8px 10px;border-radius:8px}
-  .menu a:hover{background:rgba(255,255,255,.08)}
-  .cta{background:var(--gold);color:#111!important;padding:8px 14px;border-radius:999px;font-weight:700}
-  .hero{background:linear-gradient(180deg, #220000, #400000);color:#fff}
-  .hero .wrap{max-width:1100px;margin:0 auto;padding:60px 16px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
-  .hero .card{background:rgba(255,255,255,.06);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:20px}
-  .hero h1{font-size:2.4rem;margin:.2rem 0}
-  .hero p.lead{color:#eaeaea;font-size:1.1rem;margin-top:.3rem}
-  .btn{display:inline-block;background:var(--gold);color:#111;padding:10px 16px;border-radius:10px;font-weight:700}
-  .btn.alt{background:#fff}
-  .section{max-width:1100px;margin:0 auto;padding:42px 16px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-  .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
-  h2.title{margin:0 0 14px 0;color:var(--primary)}
-  .muted{color:var(--muted)}
-  footer{background:#0f0f0f;color:#eee;margin-top:40px}
-  footer .wrap{max-width:1100px;margin:0 auto;padding:30px 16px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
-  footer a{color:var(--gold)}
-  .small{font-size:.92rem}
-  .pill{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:6px 10px;border-radius:999px}
-  @media(max-width:860px){
-    .hero .wrap{grid-template-columns:1fr}
-    footer .wrap{grid-template-columns:1fr}
-  }
-
-    .sermon{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
-    .media{aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
-    .btn{display:inline-block;background:var(--gold);color:#111;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
-    audio{width:100%;margin-top:10px}
-  </style>
+  <meta charset="UTF-8">
+  <title>Sermons - Rev. Samuel Akomeah</title>
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <nav class="nav"><div class="wrap"><div class="brand"><img src="../assets/img/profile.jpg" alt="Rev. Samuel Akomeah"><div>Rev. Samuel Akomeah</div></div>
-  <div class="menu"><a href="../index.html">Home</a><a href="../sermons/sermons.html">Sermons</a><a href="../events/events.html">Events</a><a class="cta" href="../give/give.html">Give</a><a href="../contact/contact.html">Contact</a></div></div></nav>
-
-  <section class="section">
-    <h2 class="title">Sermons</h2>
-    <p class="muted">Add and manage messages through the <code>sermons/sermons.json</code> file. Manual fallback link: <a href="manual-sermon.html">manual-sermon.html</a></p>
-    <div id="sermonGrid" class="grid"></div>
+  <header>Sermons</header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="sermons.html">Sermons</a>
+    <a href="../events.html">Events</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Sermons Coming Soon</h1>
+    <p>Stay tuned for audio, video, and PDF sermons.</p>
   </section>
-
-  <footer>
-    <div class="wrap"><div><h3>Rev. Samuel Akomeah</h3><p class="small">Accra, Ghana</p></div>
-    <div><h4>Contact</h4><p class="small"><a href="mailto:alphawordministriesgh@gmail.com">alphawordministriesgh@gmail.com</a><br/>0549910888 / +233535432977</p></div>
-    <div><h4>Give</h4><p class="small"><a href="../give/give.html">Partner via Paystack</a></p></div></div>
-    <div style="text-align:center;padding:12px;color:#aaa;border-top:1px solid #222">&copy; 2025 Rev. Samuel Akomeah</div>
-  </footer>
-
-  <script>
-    async function loadSermons() {
-      try {
-        const res = await fetch('sermons.json?cache=' + Date.now());
-        const data = await res.json();
-        const grid = document.getElementById('sermonGrid');
-        grid.innerHTML = data.map(s => `
-          <div class="card sermon">
-            <h3>${s.title}</h3>
-            <p class="muted">${s.date || ''}</p>
-            ${
-              /* YouTube embed if provided */
-            }
-            ${s.youtube ? `<div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/${s.youtube}" title="YouTube video" frameborder="0" allowfullscreen></iframe></div>` : ''}
-            ${s.audio ? `<audio controls><source src="../${s.audio}" type="audio/mpeg"></audio>` : ''}
-            <p>
-              ${s.notes ? `<a class="btn" href="../${s.notes}" target="_blank">Download Notes (PDF)</a>` : ''}
-            </p>
-          </div>
-        `).join('');
-      } catch (e) {
-        document.getElementById('sermonGrid').innerHTML = '<div class="card"><p class="muted">Could not load sermons.json — please ensure it is uploaded.</p></div>';
-      }
-    }
-    loadSermons();
-  </script>
+  <footer>© 2025 Rev. Samuel Akomeah Ministries</footer>
 </body>
 </html>
