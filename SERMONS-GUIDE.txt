@@ -1,0 +1,31 @@
+SERMONS QUICK GUIDE — Rev. Samuel Akomeah
+
+Two ways to add messages:
+
+A) JSON (Recommended for many sermons)
+1) Open /sermons/sermons.json
+2) Add a new object like this, separated by a comma:
+   {
+     "title": "New Message Title",
+     "date": "Month YYYY",
+     "youtube": "YouTubeVideoID",
+     "audio": "resources/audio/your-file.mp3",
+     "notes": "resources/notes/your-notes.pdf"
+   }
+3) Save and upload. The page will render it automatically.
+
+How to find a YouTube ID:
+- If your link is https://www.youtube.com/watch?v=AbCdEfGh, the ID is AbCdEfGh
+
+B) Manual (One-off quick updates)
+- Edit /sermons/manual-sermon.html
+- Replace the embed IDs, audio path and notes path for each card
+
+Files to replace with your real content:
+- /resources/audio/*.mp3  (upload your real audio or use remote URLs)
+- /resources/notes/*.pdf  (upload your sermon notes)
+
+Publishing:
+- Upload the whole folder to your GitHub repo (root).
+- Ensure GitHub Pages is enabled (main branch / root).
+- Visit your pages URL to see changes.

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "The Altar Must Burn",
+    "date": "August 2025",
+    "youtube": "VIDEO_ID_1",
+    "audio": "resources/audio/the-altar-must-burn.mp3",
+    "notes": "resources/notes/The_Altar_Must_Burn.pdf"
+  },
+  {
+    "title": "Anointing for Revival",
+    "date": "July 2025",
+    "youtube": "VIDEO_ID_2",
+    "audio": "resources/audio/anointing-for-revival.mp3",
+    "notes": "resources/notes/Anointing_for_Revival.pdf"
+  },
+  {
+    "title": "Our God Is Able",
+    "date": "June 2025",
+    "youtube": "VIDEO_ID_3",
+    "audio": "resources/audio/our-god-is-able.mp3",
+    "notes": "resources/notes/Our_God_Is_Able.pdf"
+  }
+]
