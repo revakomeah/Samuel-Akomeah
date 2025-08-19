@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sermons — Rev. Samuel Akomeah</title>
+  <title>Contact — Rev. Samuel Akomeah</title>
   <style>
   :root{
     --primary:#8b0000;
@@ -48,54 +48,43 @@
     footer .wrap{grid-template-columns:1fr}
   }
 
-    .sermon{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
-    .media{aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
-    .btn{display:inline-block;background:var(--gold);color:#111;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
-    audio{width:100%;margin-top:10px}
+    form input, form textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin:6px 0}
+    form button{background:var(--primary);color:#fff;border:none;padding:12px 16px;border-radius:10px;font-weight:700}
   </style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap"><div class="brand"><img src="../assets/img/profile.jpg" alt="Rev. Samuel Akomeah"><div>Rev. Samuel Akomeah</div></div>
+  <nav class="nav"><div class="wrap"><div class="brand"><img src="../assets/img/profile.jpg"><div>Rev. Samuel Akomeah</div></div>
   <div class="menu"><a href="../index.html">Home</a><a href="../sermons/sermons.html">Sermons</a><a href="../events/events.html">Events</a><a class="cta" href="../give/give.html">Give</a><a href="../contact/contact.html">Contact</a></div></div></nav>
 
   <section class="section">
-    <h2 class="title">Sermons</h2>
-    <p class="muted">Add and manage messages through the <code>sermons/sermons.json</code> file. Manual fallback link: <a href="manual-sermon.html">manual-sermon.html</a></p>
-    <div id="sermonGrid" class="grid"></div>
+    <h2 class="title">Contact / Prayer Request</h2>
+    <div class="grid">
+      <div class="card">
+        <form action="https://formspree.io/f/xblkekpj" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required/>
+          <input type="email" name="email" placeholder="Your Email" required/>
+          <input type="text" name="phone" placeholder="Your Phone (optional)"/>
+          <textarea name="message" rows="6" placeholder="Your Message / Prayer Request" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p class="muted" style="margin-top:8px">We’ll respond via email. God bless you.</p>
+      </div>
+      <div class="card">
+        <h3>Direct Contacts</h3>
+        <p class="small">Email: <a href="mailto:alphawordministriesgh@gmail.com">alphawordministriesgh@gmail.com</a><br/>Phone: 0549910888 / +233535432977<br/>Location: Accra, Ghana</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank">Facebook</a>
+          <a class="btn" href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
     <div class="wrap"><div><h3>Rev. Samuel Akomeah</h3><p class="small">Accra, Ghana</p></div>
-    <div><h4>Contact</h4><p class="small"><a href="mailto:alphawordministriesgh@gmail.com">alphawordministriesgh@gmail.com</a><br/>0549910888 / +233535432977</p></div>
+    <div><h4>Ministry</h4><p class="small"><a href="../events/events.html">Events</a><br/><a href="../sermons/sermons.html">Sermons</a></p></div>
     <div><h4>Give</h4><p class="small"><a href="../give/give.html">Partner via Paystack</a></p></div></div>
     <div style="text-align:center;padding:12px;color:#aaa;border-top:1px solid #222">&copy; 2025 Rev. Samuel Akomeah</div>
   </footer>
-
-  <script>
-    async function loadSermons() {
-      try {
-        const res = await fetch('sermons.json?cache=' + Date.now());
-        const data = await res.json();
-        const grid = document.getElementById('sermonGrid');
-        grid.innerHTML = data.map(s => `
-          <div class="card sermon">
-            <h3>${s.title}</h3>
-            <p class="muted">${s.date || ''}</p>
-            ${
-              /* YouTube embed if provided */
-            }
-            ${s.youtube ? `<div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/${s.youtube}" title="YouTube video" frameborder="0" allowfullscreen></iframe></div>` : ''}
-            ${s.audio ? `<audio controls><source src="../${s.audio}" type="audio/mpeg"></audio>` : ''}
-            <p>
-              ${s.notes ? `<a class="btn" href="../${s.notes}" target="_blank">Download Notes (PDF)</a>` : ''}
-            </p>
-          </div>
-        `).join('');
-      } catch (e) {
-        document.getElementById('sermonGrid').innerHTML = '<div class="card"><p class="muted">Could not load sermons.json — please ensure it is uploaded.</p></div>';
-      }
-    }
-    loadSermons();
-  </script>
 </body>
 </html>

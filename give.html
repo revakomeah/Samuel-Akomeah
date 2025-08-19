@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sermons — Rev. Samuel Akomeah</title>
+  <title>Give / Partner — Rev. Samuel Akomeah</title>
   <style>
   :root{
     --primary:#8b0000;
@@ -47,55 +47,33 @@
     .hero .wrap{grid-template-columns:1fr}
     footer .wrap{grid-template-columns:1fr}
   }
-
-    .sermon{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,.08);border:1px solid #eee}
-    .media{aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
-    .btn{display:inline-block;background:var(--gold);color:#111;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
-    audio{width:100%;margin-top:10px}
-  </style>
+</style>
 </head>
 <body>
-  <nav class="nav"><div class="wrap"><div class="brand"><img src="../assets/img/profile.jpg" alt="Rev. Samuel Akomeah"><div>Rev. Samuel Akomeah</div></div>
+  <nav class="nav"><div class="wrap"><div class="brand"><img src="../assets/img/profile.jpg"><div>Rev. Samuel Akomeah</div></div>
   <div class="menu"><a href="../index.html">Home</a><a href="../sermons/sermons.html">Sermons</a><a href="../events/events.html">Events</a><a class="cta" href="../give/give.html">Give</a><a href="../contact/contact.html">Contact</a></div></div></nav>
 
   <section class="section">
-    <h2 class="title">Sermons</h2>
-    <p class="muted">Add and manage messages through the <code>sermons/sermons.json</code> file. Manual fallback link: <a href="manual-sermon.html">manual-sermon.html</a></p>
-    <div id="sermonGrid" class="grid"></div>
+    <h2 class="title">Partner with the Ministry</h2>
+    <p>Your giving advances crusades, evangelism, and media outreach. Thank you for partnering with us.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Paystack (Card / Mobile Money)</h3>
+        <p class="muted">Secure giving for Ghana & international partners.</p>
+        <a class="btn" target="_blank" href="https://paystack.shop/pay/nn8ascpvgn">Give via Paystack</a>
+      </div>
+      <div class="card">
+        <h3>Bank / MoMo (Coming Soon)</h3>
+        <p class="muted">We’ll add Flutterwave & MoMo options here.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <div class="wrap"><div><h3>Rev. Samuel Akomeah</h3><p class="small">Accra, Ghana</p></div>
     <div><h4>Contact</h4><p class="small"><a href="mailto:alphawordministriesgh@gmail.com">alphawordministriesgh@gmail.com</a><br/>0549910888 / +233535432977</p></div>
-    <div><h4>Give</h4><p class="small"><a href="../give/give.html">Partner via Paystack</a></p></div></div>
+    <div><h4>Social</h4><p class="small"><a href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank">Facebook</a><br/><a href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw" target="_blank">Instagram</a></p></div></div>
     <div style="text-align:center;padding:12px;color:#aaa;border-top:1px solid #222">&copy; 2025 Rev. Samuel Akomeah</div>
   </footer>
-
-  <script>
-    async function loadSermons() {
-      try {
-        const res = await fetch('sermons.json?cache=' + Date.now());
-        const data = await res.json();
-        const grid = document.getElementById('sermonGrid');
-        grid.innerHTML = data.map(s => `
-          <div class="card sermon">
-            <h3>${s.title}</h3>
-            <p class="muted">${s.date || ''}</p>
-            ${
-              /* YouTube embed if provided */
-            }
-            ${s.youtube ? `<div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/${s.youtube}" title="YouTube video" frameborder="0" allowfullscreen></iframe></div>` : ''}
-            ${s.audio ? `<audio controls><source src="../${s.audio}" type="audio/mpeg"></audio>` : ''}
-            <p>
-              ${s.notes ? `<a class="btn" href="../${s.notes}" target="_blank">Download Notes (PDF)</a>` : ''}
-            </p>
-          </div>
-        `).join('');
-      } catch (e) {
-        document.getElementById('sermonGrid').innerHTML = '<div class="card"><p class="muted">Could not load sermons.json — please ensure it is uploaded.</p></div>';
-      }
-    }
-    loadSermons();
-  </script>
 </body>
 </html>
