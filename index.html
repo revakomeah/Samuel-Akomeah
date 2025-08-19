@@ -5,154 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rev. Samuel Akomeah</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: #8b0000;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 5px solid #fff;
-    }
-    header h1 {
-      margin: 10px 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section h2 {
-      color: #8b0000;
-      margin-bottom: 20px;
-    }
-    .contact-info {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .contact-info p {
-      margin: 5px 0;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    .social-links a {
-      margin: 0 10px;
-      color: #8b0000;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    form input, form textarea, form button {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background: #8b0000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #2c3e50; color: #fff; padding: 20px 0; text-align: center; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; background: #34495e; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 40px; text-align: center; }
+    .btn { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #2980b9; color: #fff; text-decoration: none; border-radius: 5px; }
+    .btn:hover { background: #3498db; }
+    footer { background: #2c3e50; color: white; padding: 20px; text-align: center; margin-top: 20px; }
   </style>
 </head>
 <body>
   <header>
-    <img src="1000000056.jpg" alt="Rev. Samuel Akomeah">
     <h1>Rev. Samuel Akomeah</h1>
-    <p>Pastor • Teacher • Revivalist</p>
+    <p>Pastor | Teacher | Author</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#sermons">Sermons</a>
-    <a href="#contact">Contact</a>
-    <a href="#donate">Donate</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="sermons/sermons.html">Sermons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      Rev. Samuel Akomeah is the founder of Alpha Word Ministries, passionate about igniting prayer,
-      preaching the Gospel of Christ, and raising a generation on fire for God. His ministry is rooted
-      in revival, teaching, and empowering believers to walk in the anointing of the Holy Spirit.
-    </p>
-  </section>
-
-  <!-- 🔥 New Sermons Section -->
-  <section id="sermons" style="background: #f9f9f9; text-align: center;">
-    <h2>Sermons</h2>
-    <p>🎧 Our audio and video sermons will be available here soon. Stay tuned!</p>
-    <button style="margin-top:20px; padding:10px 20px; font-size:1rem; background:#8b0000; color:#fff; border:none; border-radius:8px; cursor:pointer;">
-      Notify Me
-    </button>
+    <p>Rev. Samuel Akomeah is a passionate pastor, teacher, and author dedicated to spreading the Word of God and raising believers in prayer and purpose.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/xblkekpj" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="contact-info">
-      <p>Email: alphawordministriesgh@gmail.com</p>
-      <p>Phone: 0549910888 / +233535432977</p>
-      <p>Location: Accra, Ghana</p>
-    </div>
-  </section>
-
-  <section id="donate">
-    <h2>Support the Ministry</h2>
-    <p style="text-align:center;">
-      Partner with us to spread the Gospel. Click below to give:
-    </p>
-    <p style="text-align:center;">
-      <a href="https://paystack.shop/pay/nn8ascpvgn" target="_blank"
-         style="background:#8b0000; color:#fff; padding:12px 25px; border-radius:8px; text-decoration:none;">
-        Donate via Paystack
-      </a>
-    </p>
+    <p>Email: alphawordministriesgh@gmail.com</p>
+    <p>Phone: +233549910888 / +233535432977</p>
+    <p>Location: Accra, Ghana</p>
   </section>
 
   <footer>
-    <p>Connect with me:</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw" target="_blank">Instagram</a>
-    </div>
-    <p>&copy; 2025 Rev. Samuel Akomeah. All rights reserved.</p>
+    <p>&copy; 2025 Rev. Samuel Akomeah. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
