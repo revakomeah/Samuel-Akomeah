@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,168 +10,133 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: white;
-      background: url('https://i.ibb.co/zQn7B8M/fire-bg.jpg') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 40px;
     }
     header {
       text-align: center;
-      padding: 50px 20px;
-      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
     }
     header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid gold;
+      border: 4px solid white;
     }
-    header h1 {
-      margin: 15px 0 5px;
-      font-size: 2.5rem;
-      color: gold;
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0 5px 0;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #f8f8f8;
+    h2 {
+      font-size: 1.5em;
+      margin: 5px 0 20px 0;
+      font-weight: 300;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px;
-      background: rgba(0, 0, 0, 0.7);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      text-align: center;
+      margin: 30px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      transition: 0.3s;
     }
     nav a:hover {
-      color: gold;
+      text-decoration: underline;
     }
     section {
-      padding: 60px 20px;
-      background: rgba(0, 0, 0, 0.6);
-      margin: 20px;
-      border-radius: 12px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
     }
-    section h2 {
-      color: gold;
-      text-align: center;
+    section h3 {
+      border-bottom: 2px solid #ff4500;
+      padding-bottom: 10px;
       margin-bottom: 20px;
-      font-size: 2rem;
-    }
-    section p, section li {
-      line-height: 1.6;
-      font-size: 1.1rem;
-      text-align: center;
-    }
-    .donate-btn {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 12px 25px;
-      background: gold;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .donate-btn:hover {
-      background: orange;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(0,0,0,0.7);
-      font-size: 0.9rem;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      border-radius: 50%;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      z-index: 1000;
-    }
-    .whatsapp img {
-      width: 40px;
-      height: 40px;
+    .contact-info {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <img src="1000000056.jpg" alt="Rev. Samuel Akomeah">
+      <h1>Rev. Samuel Akomeah</h1>
+      <h2>Pastor | Teacher | Revivalist</h2>
+    </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#sermons">Sermons</a>
+      <a href="#events">Events</a>
+      <a href="#prayer">Prayer Request</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <header>
-    <img src="https://i.ibb.co/vdHzY2s/rev-akomeah.jpg" alt="Rev. Samuel Akomeah">
-    <h1>Rev. Samuel Akomeah</h1>
-    <p>Pastor • Teacher • Revivalist</p>
-  </header>
+    <section id="about">
+      <h3>About</h3>
+      <p>Rev. Samuel Akomeah is a passionate pastor and teacher of the Word, dedicated to raising a generation of fire-filled believers who will transform nations through prayer and the power of the Holy Spirit.</p>
+    </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#sermons">Sermons</a>
-    <a href="#events">Events</a>
-    <a href="#blog">Blog</a>
-    <a href="#donate">Donate</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="sermons">
+      <h3>Sermons</h3>
+      <p>Coming soon – Audio and video sermons will be uploaded here to bless your spiritual life.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Rev. Samuel Akomeah is a passionate preacher of the gospel, called to ignite revival fire across nations. Founder of Alpha Word Ministries, based in Accra, Ghana, with a mandate to raise prayerful believers and equip the saints for ministry.</p>
-  </section>
+    <section id="events">
+      <h3>Events</h3>
+      <p>Stay tuned for upcoming crusades, revival meetings, and ministry events.</p>
+    </section>
 
-  <section id="sermons">
-    <h2>Sermons</h2>
-    <p>Coming soon: powerful audio and video sermons to bless your spirit and build your faith.</p>
-  </section>
+    <section id="prayer">
+      <h3>Prayer Request</h3>
+      <form action="https://formspree.io/f/xblkekpj" method="POST">
+        <label>Your Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Your Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label>Your Prayer Request:</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <section id="events">
-    <h2>Events</h2>
-    <ul>
-      <li>🔥 Revival Crusades</li>
-      <li>🙏 Prayer Meetings</li>
-      <li>📖 Bible Teachings</li>
-    </ul>
-  </section>
+    <section id="donate">
+      <h3>Donate</h3>
+      <p>Your support helps us spread the gospel and reach more souls. Click below to donate:</p>
+      <a href="https://paystack.shop/pay/nn8ascpvgn" target="_blank" style="color: yellow; font-weight: bold;">Give via Paystack</a>
+    </section>
 
-  <section id="blog">
-    <h2>Blog & Devotionals</h2>
-    <p>Weekly devotionals, ministry updates, and inspiring words to keep your fire burning for Christ.</p>
-  </section>
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: alphawordministriesgh@gmail.com</p>
+      <p>Phone: 0549910888 | +233535432977</p>
+      <p>Location: Accra, Ghana</p>
+      <div class="contact-info">
+        <a href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/rev._samuel_akomeah?igsh=aXJiZjVkdWpxYXNw" target="_blank">Instagram</a>
+      </div>
+    </section>
 
-  <section id="donate">
-    <h2>Support the Ministry</h2>
-    <p>Your giving helps us spread the gospel and ignite revival globally.</p>
-    <a class="donate-btn" href="https://paystack.shop/pay/nn8ascpvgn" target="_blank">Give via Paystack</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: alphawordministriesgh@gmail.com</p>
-    <p>Phone: +233549910888 | +233535432977</p>
-    <p>Location: Accra, Ghana</p>
-    <form action="https://formspree.io/f/xblkekpj" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required><br><br>
-      <input type="email" name="email" placeholder="Your Email" required><br><br>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Rev. Samuel Akomeah | Alpha Word Ministries</p>
-  </footer>
-
-  <a href="https://wa.me/233535432977" target="_blank" class="whatsapp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
-
+    <footer>
+      <p>&copy; 2025 Rev. Samuel Akomeah Ministries. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
