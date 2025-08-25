@@ -3,152 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official website of Rev. Samuel Akomeah - Alpha Word Ministries. Sermons, events, prayer requests, and donations.">
-  <meta name="keywords" content="Rev Samuel Akomeah, Alpha Word Ministries, Sermons, Prayer, Ghana Pastor, Revival, Christian Ministry">
-  <meta name="author" content="Rev. Samuel Akomeah">
-  <meta property="og:title" content="Rev. Samuel Akomeah - Alpha Word Ministries">
-  <meta property="og:description" content="Experience the fire of revival. Sermons, prayer requests, ministry events, and support Alpha Word Ministries.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://revakomeah.github.io/Samuel-Akomeah/">
-  <title>Rev. Samuel Akomeah - Alpha Word Ministries</title>
+  <title>Alpha Word Ministries - Rev. Samuel Akomeah</title>
+  <meta name="description" content="Official website of Alpha Word Ministries International led by Rev. Samuel Akomeah. Sermons, prayer requests, donations, events, and ministry gallery.">
+  <meta name="keywords" content="Alpha Word Ministries, Rev. Samuel Akomeah, Sermons, Prayer, Christian Ministry, Ghana, Revival, Gospel, Donations, Gallery">
+  <meta name="author" content="Alpha Word Ministries">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: white;
-      background: url('https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: #fff;
+      background: url('fiery-background.jpg') no-repeat center center/cover;
     }
     header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
       text-align: center;
+      padding: 50px 20px;
+      background: rgba(0,0,0,0.6);
     }
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
-      color: #ff4500;
+      color: #FFD700;
     }
     nav {
-      margin-top: 10px;
+      background: rgba(0,0,0,0.8);
+      padding: 10px;
+      text-align: center;
     }
     nav a {
-      margin: 0 15px;
+      color: #FFD700;
       text-decoration: none;
-      color: #ffd700;
+      margin: 0 15px;
       font-weight: bold;
     }
     section {
-      padding: 40px 20px;
-      background: rgba(0, 0, 0, 0.6);
+      padding: 50px 20px;
+      background: rgba(0,0,0,0.7);
       margin: 20px;
       border-radius: 10px;
     }
-    footer {
-      background: rgba(0, 0, 0, 0.9);
-      padding: 20px;
+    section h2 {
       text-align: center;
+      color: #FFD700;
+      margin-bottom: 20px;
     }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
     }
-    .whatsapp-float:hover {
-      background: #1ebc57;
-    }
-    form input, form textarea {
+    .gallery img {
       width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s;
     }
-    form button {
-      padding: 10px 20px;
-      background: #ff4500;
-      color: white;
-      border: none;
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
       border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      background: #FFD700;
+      color: #000;
       font-weight: bold;
       cursor: pointer;
     }
-    form button:hover {
-      background: #e03e00;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.9);
+      margin-top: 20px;
+    }
+    .whatsapp-chat {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    .whatsapp-chat a img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Rev. Samuel Akomeah</h1>
-    <p>Alpha Word Ministries</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#sermons">Sermons</a>
-      <a href="#prayer">Prayer Request</a>
-      <a href="#events">Events</a>
-      <a href="#donate">Donate</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Alpha Word Ministries</h1>
+    <p>Led by Rev. Samuel Akomeah</p>
   </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#sermons">Sermons</a>
+    <a href="#prayer">Prayer Request</a>
+    <a href="#donate">Donate</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <section id="about">
-    <h2>About</h2>
-    <p>Welcome to the official website of Rev. Samuel Akomeah, founder of Alpha Word Ministries. Our mission is to spread the fire of revival, prayer, and transformation through the Word of God.</p>
+    <h2>About the Ministry</h2>
+    <p>Alpha Word Ministries International is a revival-driven ministry led by Rev. Samuel Akomeah. Our mission is to set altars ablaze with prayer, preach the uncompromising Word of God, and raise disciples for the Kingdom.</p>
   </section>
 
   <section id="sermons">
     <h2>Sermons</h2>
-    <p>Coming Soon – Stay tuned for fiery sermons, audio, and video messages that will ignite your spirit.</p>
+    <p>Coming soon: powerful audio, video, and PDF sermons to bless your spiritual life.</p>
   </section>
 
   <section id="prayer">
-    <h2>Prayer Request</h2>
+    <h2>Submit a Prayer Request</h2>
     <form action="https://formspree.io/f/xblkekpj" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="phone" placeholder="Your Phone (Optional)">
-      <textarea name="message" placeholder="Your Prayer Request" rows="5" required></textarea>
-      <button type="submit">Submit Request</button>
+      <textarea name="message" rows="5" placeholder="Your Prayer Request" required></textarea>
+      <button type="submit">Send Request</button>
     </form>
   </section>
 
-  <section id="events">
-    <h2>Events</h2>
-    <p>Stay connected with our upcoming crusades, revivals, and ministry programs. More details coming soon.</p>
+  <section id="donate">
+    <h2>Support the Ministry</h2>
+    <p>Partner with us to spread the Gospel.</p>
+    <button onclick="window.location.href='https://paystack.com/pay/example'">Give via Paystack</button>
   </section>
 
-  <section id="donate">
-    <h2>Donate</h2>
-    <p>Support Alpha Word Ministries and partner with us to spread the Gospel.</p>
-    <p><a href="https://paystack.shop/pay/nn8ascpvgn" target="_blank" style="color:#ffd700; font-weight:bold;">Click here to donate via Paystack</a></p>
+  <section id="gallery">
+    <h2>Ministry Gallery</h2>
+    <div class="gallery">
+      <img src="1000164237.jpg" alt="Gallery Image 1">
+      <img src="1000164235.jpg" alt="Gallery Image 2">
+      <img src="1000164238.jpg" alt="Gallery Image 3">
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alphawordministriesgh@gmail.com" style="color:#ffd700;">alphawordministriesgh@gmail.com</a></p>
+    <h2>Contact Us</h2>
+    <p>Email: alphawordministriesgh@gmail.com</p>
     <p>Phone: +233535432977</p>
-    <p>Facebook: <a href="https://www.facebook.com/share/16KnvF8Xj8/" target="_blank" style="color:#ffd700;">Follow on Facebook</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/rev._samuel_akomeah" target="_blank" style="color:#ffd700;">Follow on Instagram</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Alpha Word Ministries | Rev. Samuel Akomeah</p>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/233535432977" class="whatsapp-float" target="_blank">💬</a>
-
+  <div class="whatsapp-chat">
+    <a href="https://wa.me/233535432977" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+    </a>
+  </div>
 </body>
 </html>
